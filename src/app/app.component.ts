@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'calculadora-app';
+  titulo = 'Calculadora cuma';
+  a:number = 0
+  b:number = 0
+  r:number = 0
+
+  suma = () => this.r = Number(this.a) + Number(this.b)
+  resta = () => this.r = Number(this.a) - Number(this.b)
+  multiplica = () => this.r = Number(this.a) * Number(this.b)
+  divide = () => this.r = Number(this.a) / Number(this.b)
 }
